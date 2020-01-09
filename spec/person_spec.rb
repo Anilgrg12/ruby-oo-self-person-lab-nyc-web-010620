@@ -4,7 +4,7 @@ RSpec.describe 'Person' do
   let(:people) { [stella, blanche] }
   let!(:name_hash) { { stella => 'Stella', blanche => 'Blanche' } }
 
-  context 'instantiation' do.
+  context 'instantiation' do
     describe '::new' do
       it 'a new person is instantiated with a name' do
         expect { Person.new('Blake') }.to_not raise_error
